@@ -21,15 +21,14 @@ scw: swooleframework框架 阉割版
 * 支持Session/Cookie
 * 支持Http/FastCGI两种协议
 
-scw应用服务器，需要安装swoole扩展。
+### scw应用服务器，需要安装swoole扩展。
 ```
 pecl install swoole
-```
 然后修改php.ini加入extension=swoole.so
 ```
 
-Nginx URLRewrite配置
------
+### Nginx URLRewrite配置
+
 ```
 server {
     listen  80;
@@ -44,11 +43,12 @@ server {
 }
 ```
 
-启动server
+###启动server
 ```
 php swc/server/app_server start
 ```
-访问控制器
+###访问控制器
+
 ```
 www.scw.com/page/index
 访问的是apps/controllers/Page/index
